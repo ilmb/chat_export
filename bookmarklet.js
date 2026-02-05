@@ -121,7 +121,7 @@
     
   } catch (error) {
     console.error('Export failed:', error);
-    const msg = `AI Chat Exporter Error:\n${error.message}\n\n✅ Works best on:\n• DeepSeek (chat.deepseek.com)\n• Claude.ai\n\n💡 Tip: Scroll to top of chat to load full history\n\n🐞 Report issue: github.com/YOUR_GITHUB_USERNAME/ai-chat-exporter`;
+    const msg = `AI Chat Exporter Error:\n${error.message}\n\n✅ Works best on:\n• DeepSeek (chat.deepseek.com)\n• Claude.ai\n\n💡 Tip: Scroll to top of chat to load full history\n\n🐞 Report issue: github.com/ilmb/chat_export`;
     if (confirm(msg + '\n\nShow technical details?')) alert(error.stack);
   }
 })();
