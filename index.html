@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chat Exporter • One-Click Markdown Export</title>
+  <style>
+    :root { --primary: #6366f1; --success: #10b981; --dark: #1e293b; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6; color: #334155; background: #f8fafc;
+      max-width: 800px; margin: 2rem auto; padding: 0 1.5rem;
+    }
+    header { text-align: center; margin-bottom: 2.5rem; }
+    h1 { font-size: 2.5rem; margin: 1rem 0; background: linear-gradient(90deg, var(--primary), #8b5cf6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .subtitle { font-size: 1.25rem; color: #64748b; margin-top: 0.5rem; }
+    .bookmarklet-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white !important;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+      margin: 1.5rem 0;
+      cursor: grab;
+      transition: all 0.2s;
+      border: 2px dashed transparent;
+    }
+    .bookmarklet-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(99, 102, 241, 0.45);
+      border-color: rgba(255,255,255,0.3);
+    }
+    .instructions {
+      background: white;
+      border-radius: 16px;
+      padding: 1.8rem;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      margin: 2rem 0;
+    }
+    .steps { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 1.2rem; }
+    .step { display: flex; gap: 1rem; align-items: flex-start; }
+    .step-num {
+      min-width: 28px; height: 28px; background: var(--primary); color: white;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-weight: bold; margin-top: 4px;
+    }
+    .platforms { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem; }
+    .platform { background: #f1f5f9; padding: 0.4rem 0.9rem; border-radius: 20px; font-weight: 500; }
+    .privacy-note {
+      background: #dbeafe; border-left: 4px solid var(--primary);
+      padding: 1rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    footer { text-align: center; color: #64748b; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e2e8f0; }
+    @media (max-width: 600px) {
+      body { padding: 1rem; margin: 1rem; }
+      .bookmarklet-btn { width: 100%; padding: 16px; }
+      .step { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🤖 AI Chat Exporter</h1>
+    <p class="subtitle">Export conversations from any AI chat to Markdown in one click • Zero installs • 100% client-side</p>
+    <a 
+      href="javascript:(function(){const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/YOUR_GITHUB_USERNAME/ai-chat-exporter@main/bookmarklet.js';document.body.appendChild(s);})()"
+      class="bookmarklet-btn"
+      draggable="true"
+      ondragstart="event.dataTransfer.setData('text/plain', this.href)"
+    >
+      📥 DRAG TO BOOKMARKS BAR
+    </a>
+    <p><small>(Works on Chrome, Firefox, Safari, Edge • Mobile & Desktop)</small></p>
+  </header>
+
+  <div class="instructions">
+    <h2>✨ How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>Drag the green button above to your browser's bookmarks bar</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>Open any AI chat conversation (Claude, DeepSeek, etc.)</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>Click the bookmarklet → Instantly downloads clean Markdown file</div>
+      </div>
+    </div>
+    
+    <h3 style="margin-top: 1.5rem;">✅ Supported Platforms</h3>
+    <div class="platforms">
+      <span class="platform">DeepSeek</span>
+      <span class="platform">Claude.ai</span>
+      <span class="platform">Grok</span>
+      <span class="platform">Perplexity Arena</span>
+      <span class="platform">+ More coming</span>
+    </div>
+    
+    <div class="privacy-note">
+      🔒 <strong>Your privacy matters:</strong> All processing happens in your browser. Zero data leaves your device. Open source & auditable.
+    </div>
+  </div>
+
+  <div style="text-align: center; margin: 2rem 0;">
+    <img src="demo.gif" alt="10-second demo: Drag bookmarklet → Click on chat → Download Markdown" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+    <p><small>▲ Watch it work in 10 seconds</small></p>
+  </div>
+
+  <footer>
+    <p>
+      Built with ❤️ • 
+      <a href="https://github.com/YOUR_GITHUB_USERNAME/ai-chat-exporter" style="color: var(--primary); text-decoration: none;">GitHub Repo</a> • 
+      <a href="https://github.com/YOUR_GITHUB_USERNAME/ai-chat-exporter/issues" style="color: var(--primary); text-decoration: none;">Request Platform</a>
+    </p>
+    <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #94a3b8;">
+      Bookmarklet code is under 1KB • Updates instantly when we improve the script
+    </p>
+  </footer>
+
+  <script>
+    // Auto-copy bookmarklet on click for mobile users
+    document.querySelector('.bookmarklet-btn').addEventListener('click', (e) => {
+      if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+        e.preventDefault();
+        const bookmarkletCode = e.target.href;
+        navigator.clipboard.writeText(bookmarkletCode).then(() => {
+          alert('✅ Bookmarklet code copied!\n\n1. Open bookmarks manager\n2. Create new bookmark\n3. Paste this code as URL\n4. Name it "Export AI Chat"');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
