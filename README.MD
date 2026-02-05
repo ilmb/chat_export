@@ -1,39 +1,38 @@
-# Mini app to download chathistory from lmarena, chatgpt et
-# 🤖 AI Chat Exporter Bookmarklet
-> Export ANY AI chat to Markdown in one click • Zero installs • 100% client-side • Works on mobile & desktop
+# 💬 Chat Exporter
 
-[![Drag to Bookmarks](https://img.shields.io/badge/✨_Drag_to_Bookmarks_Bar-4361ee?style=for-the-badge&logo=javascript)](https://YOUR_GITHUB_USERNAME.github.io/ai-chat-exporter/)
-[![Privacy](https://img.shields.io/badge/🔒_Zero_Data_Leaves_Your_Device-06d6a0?style=for-the-badge)]()
+> One-click export from ChatGPT, Gemini, DeepSeek & LMArena to Markdown
 
-https://github.com/user-attachments/assets/0a9c7c7f-5c0a-4f9d-8f3a-9e3a9b3e3e3e  
-*(Record your own 10-sec demo later - works without it!)*
+🔗 **Live Demo:** [https://YOUR_USERNAME.github.io/chat-exporter](https://YOUR_USERNAME.github.io/chat-exporter)
 
-## ✨ Why This Exists
-Stop losing valuable AI conversations to screenshots or copy-paste hell. This bookmarklet:
-- ✅ **Exports full chats** from DeepSeek, Claude.ai & more
-- ✅ **Preserves code blocks**, timestamps, sources
-- ✅ **Zero permissions** needed (unlike extensions)
-- ✅ **Works on locked-down work computers** (no admin rights)
-- ✅ **Mobile-friendly** (iOS Safari compatible)
-- ✅ **Your chats never leave your browser**
+## ✨ Features
 
-## 🚀 How to Use (End Users)
-1. **Go to live page**: https://YOUR_GITHUB_USERNAME.github.io/ai-chat-exporter/  
-   *(Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username!)*
-2. **DRAG** the green "📥 DRAG TO BOOKMARKS BAR" button to your bookmarks bar
-3. Open any AI chat (DeepSeek, Claude, etc.)
-4. **CLICK** the bookmarklet → Instant Markdown download!
+- 📥 Export any AI chat to Markdown
+- 🔒 100% client-side - no data sent anywhere
+- 🌐 Works on any browser
+- ⚡ One-click bookmarklet
 
-📱 **Mobile users**: Tap button → "Copy" → Create bookmark → Paste as URL → Name "Export AI Chat"
+## 🚀 Supported Platforms
 
----
+| Platform | URL | Status |
+|----------|-----|--------|
+| ChatGPT | chatgpt.com | ✅ |
+| Gemini | gemini.google.com | ✅ |
+| DeepSeek | chat.deepseek.com | ✅ |
+| LMArena | lmarena.ai | ✅ |
 
-## 🔧 CRITICAL SETUP STEP (For YOU - Repo Owner)
-### ⚠️ THIS IS "STEP 4" EXPLAINED CLEARLY ⚠️
-Your bookmarklet **WILL FAIL** if you skip this. Do this NOW:
+## 📦 Deploy Your Own
 
-1. **Open `index.html`** in GitHub editor (click pencil icon)
-2. **FIND & REPLACE** (Ctrl+F / Cmd+F):
-   ```diff
-   - YOUR_GITHUB_USERNAME
-   + your-actual-github-username   ← ALL LOWERCASE!
+1. Fork this repository
+2. Go to Settings → Pages
+3. Select "Deploy from branch" → `main`
+4. Your site is live at `https://YOUR_USERNAME.github.io/chat-exporter`
+
+## 🛠️ Development
+
+```bash
+# Clone the repo
+git clone https://github.com/YOUR_USERNAME/chat-exporter.git
+cd chat-exporter
+
+# Open in browser
+open index.html
